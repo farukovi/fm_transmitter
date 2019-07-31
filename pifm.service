@@ -1,0 +1,11 @@
+[Unit]
+Description=RADIO Service
+After=multi-user.target
+
+[Service]
+Type=idle
+WorkingDirectory=/home/pi/PI_FM/
+ExecStart=/home/pi/PI_FM/startRadio.sh
+
+[Install]
+WantedBy=multi-user.target
